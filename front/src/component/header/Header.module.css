@@ -1,0 +1,84 @@
+.container {
+  position: sticky;
+  top: 0;
+  height: 8vh;
+  background: #eee;
+  border-bottom: 1px solid var(--border-color-default);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.appName {
+  font-weight: bold;
+  font-size: 32px;
+  color: var(--font-color-default);
+  letter-spacing: 0.18em;
+}
+
+@media screen and (width <= 800px) {
+  .appName {
+    font-size: 16px;
+  }
+}
+
+.headerModules {
+  display: flex;
+  align-items: center;
+  margin: 0 16px 0 auto;
+}
+
+@media screen and (width <= 512px) {
+  .headerModules {
+    display: none;
+  }
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin: 0 8px 0 24px;
+}
+
+.icon {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 30px;
+}
+
+.menu {
+  display: flex;
+  width: 70%;
+  height: 92vh;
+  justify-content: center;
+  margin: 0 0 0 auto;
+  background-color: rgba(238, 238, 238, 0.7);
+  position: fixed;
+  top: 8vh;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.openMenu {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.closeMenu {
+  transform: translateX(150%);
+  opacity: 0;
+  pointer-events: none;
+}

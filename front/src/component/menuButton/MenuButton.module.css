@@ -1,0 +1,80 @@
+.buttonContainer {
+  margin: 0 0 0 auto;
+}
+
+@media screen and (width >= 512px) {
+  .buttonContainer {
+    display: none;
+  }
+}
+
+.button {
+  border: none;
+  padding: auto;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.line1 {
+  position: relative;
+  width: 30px;
+  height: 3px;
+  background-color: pink;
+  margin: 6px -2px;
+  border-radius: 1px;
+}
+
+.line1Move {
+  transition: top 0.25s, transform 0.25s ease-in-out 0.25s;
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+.line1Reverse {
+  transition: top 0.25s ease-in-out 0.25s, transform 0.25s;
+  transform: rotate(0deg);
+  top: 0;
+}
+
+.line2 {
+  width: 30px;
+  height: 3px;
+  background-color: pink;
+  margin: 6px -2px;
+  border-radius: 1px;
+}
+
+.line2Disappear {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.line2Appear {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.line3 {
+  position: relative;
+  width: 30px;
+  height: 3px;
+  background-color: pink;
+  margin: 6px -2px;
+  border-radius: 1px;
+}
+
+.line3Move {
+  transition: top 0.25s, transform 0.25s ease-in-out 0.25s;
+  top: -9px;
+  transform: rotate(45deg);
+}
+
+.line3Reverse {
+  transition: top 0.25s ease-in-out 0.25s, transform 0.25s;
+  transform: rotate(0deg);
+  top: 0;
+}
