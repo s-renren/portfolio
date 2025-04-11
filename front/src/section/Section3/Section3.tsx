@@ -1,4 +1,5 @@
 import sections from "../Section.module.css";
+import styles from "./Section3.module.css";
 
 export const Section3 = () => {
   return (
@@ -6,7 +7,7 @@ export const Section3 = () => {
       <div>
         <h2>Blogs</h2>
         <div>
-          <img src="src/assets/blogs/discordBot.png" alt="DiscordBot"></img>
+          <img className={styles.image} src="src/assets/blogs/discordBot.png" alt="DiscordBot"></img>
           <p>
             怠惰な自分にサヨナラ！Deno DeployとDiscordenoで自分を監視するDiscord
             Botを作った
@@ -14,7 +15,7 @@ export const Section3 = () => {
         </div>
 
         <div>
-          <img src="src/assets/blogs/atcoder.png" alt="AtCoder"></img>
+          <img className={styles.image} src="src/assets/blogs/atcoder.png" alt="AtCoder"></img>
           <p>
             AtCoderをTypeScriptで解くためのテンプレートをすぐ用意できるVS
             Code拡張機能を作った
