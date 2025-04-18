@@ -8,22 +8,21 @@ on:
       - completed
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./front
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,17 +33,13 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
-          # Automatically inject basePath in your Next.js configuration file and disable
-          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
-          #
-          # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
       - name: Cache
         uses: actions/cache@v4
         id: npm-cache
         with:
-          path: "node_modules"
-          key: npm-${{ hashFiles('package-lock.json') }}
+          path: "./front/node_modules"
+          key: npm-${{ hashFiles('front/package-lock.json') }}
       - name: Install dependencies
         run: npm ci
         if: steps.npm-cache.outputs.cache-hit != 'true'
@@ -53,9 +48,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./front/out
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
