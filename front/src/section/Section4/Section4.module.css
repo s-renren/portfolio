@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* 適度な隙間 */
+  margin-top: 1rem;
+}
+
+.contactIcons img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.contactIcons img:hover {
+  transform: scale(1.1);
+}
