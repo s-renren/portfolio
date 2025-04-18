@@ -20,9 +20,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./front
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,15 +27,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          # サブディレクトリのpackage-lock.jsonパスを指定
-          cache-dependency-path: ./front/package-lock.json
       - name: Cache
         uses: actions/cache@v4
         id: npm-cache
         with:
-          # 絶対パスで指定（またはリポジトリルートからの相対パス）
-          path: "./front/node_modules"
-          key: npm-${{ hashFiles('front/package-lock.json') }}
+          path: "node_modules"
+          key: npm-${{ hashFiles('package-lock.json') }}
       - name: Install dependencies
         run: npm ci
         if: steps.npm-cache.outputs.cache-hit != 'true'
@@ -47,8 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # actions/upload-pages-artifactはworking-directoryを考慮しないため完全パスを指定
-          path: ./front/dist
+          path: dist
 
   deploy:
     environment:
