@@ -1,4 +1,6 @@
 import styles from "./Menu.module.css";
+import gitHubIcon from "@/assets/icon/GitHub_Logo.png";
+import xIcon from "@/assets/icon/x_logo_name.png";
 
 const Menu = () => {
   return (
@@ -6,7 +8,7 @@ const Menu = () => {
       <div className={styles.iconBox}>
         <a href="https://github.com/s-renren">
           <img
-            src="src/assets/icon/GitHub_Logo.png"
+            src={gitHubIcon}
             alt="GitHub icon"
             className={styles.gitHubIcon}
           ></img>
@@ -14,11 +16,7 @@ const Menu = () => {
       </div>
       <div className={styles.iconBox}>
         <a href="https://x.com/s_renren_">
-          <img
-            src="src/assets/icon/x_logo_name.png"
-            alt="X icon"
-            className={styles.xIcon}
-          ></img>
+          <img src={xIcon} alt="X icon" className={styles.xIcon}></img>
         </a>
       </div>
     </div>

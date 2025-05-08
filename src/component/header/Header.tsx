@@ -2,6 +2,8 @@ import { useState } from "react";
 import MenuButton from "../menuButton/MenuButton";
 import styles from "./Header.module.css";
 import Menu from "../menu/Menu";
+import githubIcon from "@/assets/icon/github-mark.svg";
+import xIcon from "@/assets/icon/x_logo_black.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -17,7 +19,7 @@ const Header = () => {
           <div className={styles.iconBox}>
             <a href="https://github.com/s-renren">
               <img
-                src="src/assets/icon/github-mark.svg"
+                src={githubIcon}
                 alt="GitHub icon"
                 className={styles.icon}
               ></img>
@@ -25,11 +27,7 @@ const Header = () => {
           </div>
           <div className={styles.iconBox}>
             <a href="https://x.com/s_renren_">
-              <img
-                src="src/assets/icon/x_logo_black.png"
-                alt="X icon"
-                className={styles.icon}
-              ></img>
+              <img src={xIcon} alt="X icon" className={styles.icon}></img>
             </a>
           </div>
         </div>
