@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -28,7 +28,7 @@
     "tailwindcss": "^3.4.13",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
-    "vite": "^6.2.0",
-    "vue-tsc": "^2.2.8"
-  }
+    "vite": "^6.2.0"
+  },
+  "homepage": "https://s-renren.github.io/portfolio"
 }
