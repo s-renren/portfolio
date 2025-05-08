@@ -1,4 +1,7 @@
 import "./index.css";
+import discordBot_pic from "@/assets/blogs/discordBot.png";
+import atcoder_pic from "@/assets/blogs/atcoder.png";
+
 export const Section3 = () => {
   return (
     <section className="py-16 bg-white">
@@ -10,9 +13,9 @@ export const Section3 = () => {
             <a href="https://zenn.dev/loootus/articles/3613f148f0e2be">
               <img
                 className="w-full h-auto rounded-lg mb-4"
-                src="src/assets/blogs/discordBot.png"
+                src={discordBot_pic}
                 alt="DiscordBot"
-              ></img>
+              />
               <p className="text-gray-800 font-medium">
                 怠惰な自分にサヨナラ! Deno
                 DeployとDiscordenoで自分を監視するDiscord Botを作った
@@ -24,7 +27,7 @@ export const Section3 = () => {
             <a href="https://zenn.dev/loootus/articles/178286bd2a7fa6">
               <img
                 className="w-full h-auto rounded-lg mb-4"
-                src="src/assets/blogs/atcoder.png"
+                src={atcoder_pic}
                 alt="AtCoder"
               />
               <p className="text-gray-800 font-medium">

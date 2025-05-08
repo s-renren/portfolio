@@ -1,5 +1,8 @@
 import sections from "../Section.module.css";
 import styles from "./Section2.module.css";
+import dicordBot_pic from "@/assets/works/discordbot.png";
+import threeD_navi_pic from "@/assets/works/3dnavi.png";
+import hanabi_pic from "@/assets/works/hanabi.png";
 
 export const Section2 = () => {
   return (
@@ -12,7 +15,7 @@ export const Section2 = () => {
             <p>GitHubのcontribution数の管理をしてくれるDiscordBot</p>
             <img
               className={styles.image}
-              src="src/assets/works/discordbot.png"
+              src={dicordBot_pic}
               alt="DiscordBot"
             />
           </div>
@@ -20,11 +23,7 @@ export const Section2 = () => {
           <div className={styles.card}>
             <h3>3Dナビ</h3>
             <p>2024技育CAMPハッカソンvol.9最優秀賞</p>
-            <img
-              className={styles.image}
-              src="src/assets/works/3dnavi.png"
-              alt="3Dナビ"
-            />
+            <img className={styles.image} src={threeD_navi_pic} alt="3Dナビ" />
           </div>
 
           <div className={styles.card}>
@@ -32,7 +31,7 @@ export const Section2 = () => {
             <p>2024技育CAMPハッカソンvol.14最優秀賞/2024技育博vol.5出展作品</p>
             <img
               className={styles.image}
-              src="src/assets/works/hanabi.png"
+              src={hanabi_pic}
               alt="花火大会オンライン"
             />
           </div>
