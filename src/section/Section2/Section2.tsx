@@ -3,8 +3,10 @@ import styles from "./Section2.module.css";
 import dicordBot_pic from "@/assets/works/discordbot.png";
 import threeD_navi_pic from "@/assets/works/3dnavi.png";
 import hanabi_pic from "@/assets/works/hanabi.png";
+import { useNavigate } from "react-router-dom";
 
 export const Section2 = () => {
+  const navigate = useNavigate()
   return (
     <section className={sections.section}>
       <div>
@@ -36,7 +38,7 @@ export const Section2 = () => {
             />
           </div>
         </div>
-        <div className={styles.moreLink}>その他製作物一覧はこちら</div>
+        <div className={styles.moreLink} onClick={() => navigate('/portforio/works')}>その他製作物一覧はこちら</div>
       </div>
     </section>
   );
