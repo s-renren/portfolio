@@ -19,6 +19,7 @@
   font-size: 32px;
   color: var(--font-color-default);
   letter-spacing: 0.18em;
+  cursor: pointer;
 }
 
 @media screen and (width <= 800px) {

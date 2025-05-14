@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <div className={styles.container}>
       <div className={styles.main}>
-        <span className={styles.appName} onClick={() => navigate("/portforio")}>
+        <span className={styles.appName} onClick={() => navigate("/portfolio")}>
           Portfolio
         </span>
         <div className={styles.headerModules}>

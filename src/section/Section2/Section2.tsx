@@ -38,7 +38,7 @@ export const Section2 = () => {
             />
           </div>
         </div>
-        <div className={styles.moreLink} onClick={() => navigate('/portforio/works')}>その他製作物一覧はこちら</div>
+        <div className={styles.moreLink} onClick={() => navigate('/portfolio/works')}>その他製作物一覧はこちら</div>
       </div>
     </section>
   );
