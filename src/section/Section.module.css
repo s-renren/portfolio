@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  z-index: 1;
 }
 
 .section1 {
@@ -10,6 +11,7 @@
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  z-index: 1;
   height: 100%;
 }
 
