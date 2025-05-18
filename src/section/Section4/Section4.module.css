@@ -21,3 +21,10 @@
 .contactIcons img:hover {
   transform: scale(1.1);
 }
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}

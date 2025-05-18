@@ -8,6 +8,7 @@ export const Section4 = () => {
   return (
     <section className={sections.section}>
       <div>
+        <div className={styles.contact}>Contact</div>
         <div className={styles.container}>
           <div className={styles.contactIcons}>
             <a href="https://github.com/s-renren">

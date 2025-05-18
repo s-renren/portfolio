@@ -4,7 +4,7 @@ import atcoder_pic from "@/assets/blogs/atcoder.png";
 
 export const Section3 = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-transparent">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Blogs</h2>
 

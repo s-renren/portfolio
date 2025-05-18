@@ -18,6 +18,7 @@ type ParticlesProps = {
   cameraDistance?: number;
   disableRotation?: boolean;
   className?: string;
+  children?: React.ReactNode;
 };
 
 const Particles: React.FC<ParticlesProps> = ({
@@ -171,7 +172,10 @@ const Particles: React.FC<ParticlesProps> = ({
   ]);
 
   return (
-    <div ref={containerRef} className={`relative w-full h-full ${className}`} />
+    <div
+      ref={containerRef}
+      className={`fixed top-0 left-0 w-full h-full z-0 pointer-events-none ${className}`}
+    />
   );
 };
 
