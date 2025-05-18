@@ -4,13 +4,17 @@ import atcoder_pic from "@/assets/blogs/atcoder.png";
 
 export const Section3 = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-transparent">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Blogs</h2>
 
-        <div className="grid gap-8 md:grid-cols-2">
-          <div className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition p-6">
-            <a href="https://zenn.dev/loootus/articles/3613f148f0e2be">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition p-6 md:p-12 w-full max-w-md mx-auto">
+            <a
+              href="https://zenn.dev/loootus/articles/3613f148f0e2be"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 className="w-full h-auto rounded-lg mb-4"
                 src={discordBot_pic}
@@ -23,8 +27,12 @@ export const Section3 = () => {
             </a>
           </div>
 
-          <div className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition p-6">
-            <a href="https://zenn.dev/loootus/articles/178286bd2a7fa6">
+          <div className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition p-6 md:p-12 w-full max-w-md mx-auto">
+            <a
+              href="https://zenn.dev/loootus/articles/178286bd2a7fa6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 className="w-full h-auto rounded-lg mb-4"
                 src={atcoder_pic}
