@@ -12,10 +12,9 @@ export const Section2 = () => {
   ];
   return (
     <section className={sections.section}>
-      <div>
+      <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Works</h2>
         <div className="px-6 py-8">
-          <h1 className="text-3xl font-bold mb-6">Works</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {works.map((work, index) => (
               <div
@@ -34,33 +33,6 @@ export const Section2 = () => {
             ))}
           </div>
         </div>
-        {/* <div className={styles.container}>
-          <div className={styles.card}>
-            <h3>草チェッカー</h3>
-            <p>GitHubのcontribution数の管理をしてくれるDiscordBot</p>
-            <img
-              className={styles.image}
-              src={discordBot_pic}
-              alt="DiscordBot"
-            />
-          </div>
-
-          <div className={styles.card}>
-            <h3>3Dナビ</h3>
-            <p>2024技育CAMPハッカソンvol.9最優秀賞</p>
-            <img className={styles.image} src={threeD_navi_pic} alt="3Dナビ" />
-          </div>
-
-          <div className={styles.card}>
-            <h3>花火大会オンライン</h3>
-            <p>2024技育CAMPハッカソンvol.14最優秀賞/2024技育博vol.5出展作品</p>
-            <img
-              className={styles.image}
-              src={hanabi_pic}
-              alt="花火大会オンライン"
-            />
-          </div>
-        </div> */}
         <div
           className={styles.moreLink}
           onClick={() => navigate("/portfolio/works")}

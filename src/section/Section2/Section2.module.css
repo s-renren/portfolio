@@ -31,10 +31,15 @@
   border-radius: 8px;
 }
 
+.container {
+  display: flex;
+}
+
 .sectionTitle {
-  text-align: center;
+  display: inline-block;
   font-size: 2rem;
   margin-bottom: 1rem;
+  background-color: #fff;
 }
 
 .moreLink {
@@ -44,6 +49,7 @@
   color: #007bff;
   cursor: pointer;
   transition: opacity 0.2s;
+  background-color: #fff;
 }
 
 .moreLink:hover {

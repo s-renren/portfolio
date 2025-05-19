@@ -5,8 +5,8 @@ const BackGround = () => {
   return (
     <div className={styles.background}>
       <Particles
-        particleColors={["#848484", "#5c4259"]}
-        particleCount={200}
+        particleColors={["#000", "#000"]}
+        particleCount={350}
         particleSpread={10}
         speed={0.1}
         particleBaseSize={100}

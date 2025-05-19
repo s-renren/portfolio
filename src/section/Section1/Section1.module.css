@@ -21,11 +21,13 @@
   justify-content: center;
   margin-bottom: 0;
   font-size: 40px;
+  background-color: #fff;
 }
 
 .member {
   display: flex;
   margin-top: 0;
+  background-color: #fff;
 }
 
 .description {
@@ -34,4 +36,5 @@
   align-items: center;
   justify-content: center;
   margin-top: 0;
+  background-color: #fff;
 }
