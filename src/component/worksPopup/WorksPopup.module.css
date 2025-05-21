@@ -1,0 +1,12 @@
+.container {
+  position: relative;
+  display: flex;
+  top: 10%;
+  width: auto;
+  height: auto;
+}
+
+.img {
+  width: 60%;
+  height: 60%;
+}

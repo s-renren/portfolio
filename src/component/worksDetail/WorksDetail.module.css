@@ -10,4 +10,82 @@
   width: 400px;
 }
 
+.default {
+  display: none;
+}
 
+.clicked {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.backButton {
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.backButtonCross1 {
+  position: absolute;
+  top: 18px;
+  left: 6px;
+  width: 28px;
+  height: 4px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.backButtonCross2 {
+  position: absolute;
+  top: 18px;
+  left: 6px;
+  width: 28px;
+  height: 4px;
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+.defaultContainer {
+  align-items: center;
+  justify-content: center;
+}
+
+.popupContainer {
+  position: fixed;
+  top: 8vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.moreLink {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 20px;
+  color: #007bff;
+  cursor: pointer;
+  padding-bottom: 40px;
+  transition: opacity 0.2s;
+  background-color: #fff;
+}
+
+.moreLink:hover {
+  opacity: 0.7;
+}
