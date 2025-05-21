@@ -1,4 +1,4 @@
-.content {
+.mainContent {
   flex: 1;
   overflow-y: auto;
   scroll-behavior: smooth;
@@ -8,4 +8,11 @@
   &::-webkit-scrollbar {
     display: none; /* Chrome, Safari, and Opera */
   }
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }

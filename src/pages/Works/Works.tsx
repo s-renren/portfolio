@@ -1,11 +1,16 @@
+import BackGround from "../../component/BackGround/BackGround";
 import Header from "../../component/header/Header";
 import WorksDetail from "../../component/worksDetail/WorksDetail";
+import styles from "./Works.module.css";
 
 const Works = () => {
   return (
-    <div>
+    <div className={styles.app}>
+      <BackGround />
       <Header />
-      <WorksDetail />
+      <main className={styles.mainContent}>
+        <WorksDetail />
+      </main>
     </div>
   );
 };
