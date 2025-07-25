@@ -6,7 +6,7 @@ import zennIcon from "@/assets/contact/zenn.png";
 
 export const ContactSection = () => {
   return (
-    <section className={sections.section}>
+    <section id="contact" className={sections.section}>
       <div>
         <div className={styles.contact}>Contact</div>
         <div className={styles.container}>

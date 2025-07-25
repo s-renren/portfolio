@@ -86,3 +86,28 @@
   opacity: 0;
   pointer-events: none;
 }
+
+.isOpenCover {
+  position: fixed;
+  top: 8vh;
+  left: 0;
+  width: 100%;
+  height: 92vh;
+  background-color: rgba(57, 57, 57, 0.8);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in;
+}
+
+.closeCover {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s ease-out;
+}
+
+.showCover {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s ease-in;
+}

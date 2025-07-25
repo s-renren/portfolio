@@ -11,7 +11,7 @@ export const WorksSection = () => {
     { title: "花火大会オンライン", image: hanabi_pic },
   ];
   return (
-    <section className={sections.section}>
+    <section id="works" className={sections.section}>
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Works</h2>
         <div className="px-6 py-8">

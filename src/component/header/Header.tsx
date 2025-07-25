@@ -23,11 +23,15 @@ const Header = () => {
         <MenuButton open={open} onClick={toggleFunction} />
       </div>
       <div
+        className={`${styles.isOpenCover} ${open ? styles.showCover : ""}`}
+        onClick={toggleFunction}
+      />
+      <div
         className={`${styles.menu} ${
           open ? styles.openMenu : styles.closeMenu
         }`}
       >
-        <Menu />
+        <Menu onMenuClick={toggleFunction} />
       </div>
     </div>
   );
