@@ -1,10 +1,10 @@
 import sections from "../Section.module.css";
-import styles from "./Section1.module.css";
+import styles from "./AboutMe.module.css";
 import myIcon from "@/assets/icon/myIcon.png";
 
-export const Section1 = () => {
+export const AboutMeSection = () => {
   return (
-    <section className={sections.section1}>
+    <section id="about-me" className={sections.section1}>
       <div className={styles.container}>
         <div className={styles.about}>
           <img src={myIcon} alt="My Icon" className={styles.myIcon} />

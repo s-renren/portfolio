@@ -5,9 +5,10 @@
 }
 
 .contactIcons {
+  font-family: "Cascadia Mono", monospace;
   display: flex;
   justify-content: center;
-  gap: 1.5rem; /* 適度な隙間 */
+  gap: 1.5rem;
   margin-top: 1rem;
 }
 

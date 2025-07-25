@@ -1,24 +1,61 @@
 import styles from "./Menu.module.css";
-import gitHubIcon from "@/assets/icon/GitHub_Logo.png";
-import xIcon from "@/assets/icon/x_logo_name.png";
 
-const Menu = () => {
+interface MenuProps {
+  onMenuClick?: () => void;
+}
+
+const Menu = ({ onMenuClick }: MenuProps) => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+    if (onMenuClick) {
+      onMenuClick();
+    }
+  };
+
   return (
     <div className={styles.menu}>
-      <div className={styles.iconBox}>
-        <a href="https://github.com/s-renren">
-          <img
-            src={gitHubIcon}
-            alt="GitHub icon"
-            className={styles.gitHubIcon}
-          ></img>
-        </a>
-      </div>
-      <div className={styles.iconBox}>
-        <a href="https://x.com/s_renren_">
-          <img src={xIcon} alt="X icon" className={styles.xIcon}></img>
-        </a>
-      </div>
+      <nav className={styles.navigation}>
+        <ul className={styles.navList}>
+          <li className={styles.navItem}>
+            <button
+              className={styles.navButton}
+              onClick={() => scrollToSection("about-me")}
+            >
+              About Me
+            </button>
+          </li>
+          <li className={styles.navItem}>
+            <button
+              className={styles.navButton}
+              onClick={() => scrollToSection("works")}
+            >
+              Works
+            </button>
+          </li>
+          <li className={styles.navItem}>
+            <button
+              className={styles.navButton}
+              onClick={() => scrollToSection("blogs")}
+            >
+              Blogs
+            </button>
+          </li>
+          <li className={styles.navItem}>
+            <button
+              className={styles.navButton}
+              onClick={() => scrollToSection("contact")}
+            >
+              Contact
+            </button>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };
