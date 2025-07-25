@@ -1,9 +1,9 @@
 import "./index.css";
 import discordBot_pic from "@/assets/blogs/discordBot.png";
 import atcoder_pic from "@/assets/blogs/atcoder.png";
-import styles from "./Section3.module.css";
+import styles from "./Blogs.module.css";
 
-export const Section3 = () => {
+export const BlogsSection = () => {
   return (
     <section className="py-16 bg-transparent">
       <div className="max-w-6xl mx-auto px-4 text-center">

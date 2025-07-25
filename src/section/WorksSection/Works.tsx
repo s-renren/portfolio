@@ -1,10 +1,10 @@
 import sections from "../Section.module.css";
-import styles from "./Section2.module.css";
+import styles from "./Works.module.css";
 import threeD_navi_pic from "@/assets/works/3dnavi.png";
 import hanabi_pic from "@/assets/works/hanabi.png";
 import { useNavigate } from "react-router-dom";
 
-export const Section2 = () => {
+export const WorksSection = () => {
   const navigate = useNavigate();
   const works = [
     { title: "3Dナビ", image: threeD_navi_pic },

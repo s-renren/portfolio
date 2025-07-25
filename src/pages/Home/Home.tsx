@@ -1,11 +1,11 @@
 import styles from "./Home.module.css";
 import Header from "../../component/header/Header";
 import { Copyright } from "../../section/Coppylight/Copyright";
-import { Section1 } from "../../section/Section1/Section1";
-import { Section2 } from "../../section/Section2/Section2";
-import { Section3 } from "../../section/Section3/Section3";
-import { Section4 } from "../../section/Section4/Section4";
+import { AboutMeSection } from "../../section/AboutMeSection/AboutMe";
 import BackGround from "../../component/BackGround/BackGround";
+import { WorksSection } from "../../section/WorksSection/Works";
+import { BlogsSection } from "../../section/BlogsSection/Blogs";
+import { ContactSection } from "../../section/ContactSection/Contact";
 
 const Home = () => {
   return (
@@ -13,10 +13,10 @@ const Home = () => {
       <BackGround />
       <Header />
       <main className={styles.mainContent}>
-        <Section1 />
-        <Section2 />
-        <Section3 />
-        <Section4 />
+        <AboutMeSection />
+        <WorksSection />
+        <BlogsSection />
+        <ContactSection />
         <Copyright />
       </main>
     </div>

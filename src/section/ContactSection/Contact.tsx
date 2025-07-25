@@ -1,10 +1,10 @@
 import sections from "../Section.module.css";
-import styles from "./Section4.module.css";
+import styles from "./Contact.module.css";
 import gitHubIcon from "@/assets/contact/github.svg";
 import xIcon from "@/assets/contact/x.png";
 import zennIcon from "@/assets/contact/zenn.png";
 
-export const Section4 = () => {
+export const ContactSection = () => {
   return (
     <section className={sections.section}>
       <div>
