@@ -9,14 +9,16 @@
 .main {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
   padding: 0 24px;
   margin: 0 auto;
 }
 
 .appName {
+  font-family: "Cascadia Mono", monospace;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 28px;
   color: var(--font-color-default);
   letter-spacing: 0.18em;
   cursor: pointer;
@@ -24,7 +26,7 @@
 
 @media screen and (width <= 800px) {
   .appName {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 
@@ -58,11 +60,11 @@
 
 .menu {
   display: flex;
-  width: 70%;
+  width: 48%;
   height: 92vh;
   justify-content: center;
   margin: 0 0 0 auto;
-  background-color: rgba(238, 238, 238, 0.7);
+  background-color: #eee;
   position: fixed;
   top: 8vh;
   right: 0;
@@ -70,6 +72,7 @@
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   opacity: 0;
   pointer-events: none;
+  z-index: 1000;
 }
 
 .openMenu {

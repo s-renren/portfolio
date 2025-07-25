@@ -10,7 +10,9 @@ import { ContactSection } from "../../section/ContactSection/Contact";
 const Home = () => {
   return (
     <div className={styles.app}>
-      <BackGround />
+      <div className={styles.backGround}>
+        <BackGround />
+      </div>
       <Header />
       <main className={styles.mainContent}>
         <AboutMeSection />
