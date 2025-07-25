@@ -1,12 +1,15 @@
 import sections from "../Section.module.css";
 import styles from "./Section1.module.css";
+import myIcon from "@/assets/icon/myIcon.png";
 
 export const Section1 = () => {
   return (
     <section className={sections.section1}>
       <div className={styles.container}>
         <div className={styles.about}>
+          <img src={myIcon} alt="My Icon" className={styles.myIcon} />
           <h2 className={styles.name}>れんれん</h2>
+          <p className={styles.member}>2004年7月31日生まれ</p>
           <p className={styles.member}>東洋大学情報連携学部(INIAD)在学</p>
         </div>
         <div className={styles.description}>
