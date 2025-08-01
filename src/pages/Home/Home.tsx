@@ -6,6 +6,7 @@ import BackGround from "../../component/BackGround/BackGround";
 import { WorksSection } from "../../section/WorksSection/Works";
 import { BlogsSection } from "../../section/BlogsSection/Blogs";
 import { ContactSection } from "../../section/ContactSection/Contact";
+import { MySkillsSection } from "../../section/MySkillsSection/MySkillsSection";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <main className={styles.mainContent}>
         <AboutMeSection />
         <WorksSection />
+        <MySkillsSection />
         <BlogsSection />
         <ContactSection />
         <Copyright />

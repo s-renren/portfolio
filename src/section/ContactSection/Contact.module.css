@@ -24,9 +24,10 @@
 }
 
 .contact {
+  font-family: "Cascadia Mono", monospace;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 40px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
   background-color: #fff;
 }
