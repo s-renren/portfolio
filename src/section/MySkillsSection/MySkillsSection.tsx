@@ -58,14 +58,29 @@ export const MySkillsSection = () => {
           <SkillChart data={devOps} />
         </div>
       </div>
-      <div className={styles.levelDescription}>
-        <ul className={styles.levelList}>
+      <div className="w-full max-w-4xl mx-auto px-4 py-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {level.map((l, index) => (
-            <li key={index} className={styles.levelItem}>
-              {l.level} - {l.description}
-            </li>
+            <div
+              key={index}
+              className="bg-white p-4 rounded-lg shadow-md flex flex-col justify-between"
+            >
+              <span className="text-sm font-medium text-gray-700 mb-2">
+                {l.level} - {l.description}
+              </span>
+              <div className="flex space-x-1 mt-auto">
+                {[...Array(5)].map((_, i) => (
+                  <div
+                    key={i}
+                    className={`w-4 h-4 rounded-full ${
+                      i < l.level ? "bg-blue-500" : "bg-gray-300"
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );
