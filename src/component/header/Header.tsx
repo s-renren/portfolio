@@ -6,8 +6,11 @@ import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const toggleFunction = () => {
-    setOpen(!open);
+  const handleToggle = () => {
+    setOpen((s) => !s);
+  };
+  const closeMenu = () => {
+    setOpen(false);
   };
   const navigate = useNavigate();
 
@@ -20,18 +23,18 @@ const Header = () => {
         >
           Portfolio
         </span>
-        <MenuButton open={open} onClick={toggleFunction} />
+        <MenuButton open={open} onClick={handleToggle} />
       </div>
       <div
         className={`${styles.isOpenCover} ${open ? styles.showCover : ""}`}
-        onClick={toggleFunction}
+        onClick={closeMenu}
       />
       <div
         className={`${styles.menu} ${
           open ? styles.openMenu : styles.closeMenu
         }`}
       >
-        <Menu onMenuClick={toggleFunction} />
+        <Menu onMenuClick={closeMenu} />
       </div>
     </div>
   );
