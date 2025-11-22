@@ -6,7 +6,9 @@ import styles from "./Works.module.css";
 const Works = () => {
   return (
     <div className={styles.app}>
-      <BackGround />
+      <div className={styles.backGround}>
+        <BackGround />
+      </div>
       <Header />
       <main className={styles.mainContent}>
         <WorksDetail />
