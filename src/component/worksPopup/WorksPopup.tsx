@@ -65,11 +65,13 @@ const WorksPopup = ({ id }: Props) => {
 
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.txtContainer}>
         <h2 className="text-2xl font-bold mb-2">{work.title}</h2>
-        <p className="text-gray-700">{work.description}</p>
+        <p className="text-gray-700 mt-8">{work.description}</p>
       </div>
-      <img className={styles.img} src={work.image} alt={work.title} />
+      <div className={styles.imgContainer}>
+        <img className={styles.img} src={work.image} alt={work.title} />
+      </div>
     </div>
   );
 };
