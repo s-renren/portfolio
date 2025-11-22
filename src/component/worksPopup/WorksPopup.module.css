@@ -12,6 +12,7 @@
   display: flex;
   margin: 4px;
   flex-direction: column;
+  height: 100%;
 }
 
 .imgContainer {
@@ -25,4 +26,14 @@
   object-fit: contain;
   justify-content: center;
   margin-top: 6%;
+}
+
+.githubLink {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 16%;
+}
+
+.githubIcon {
+  width: 48px;
 }

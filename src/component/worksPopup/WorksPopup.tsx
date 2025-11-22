@@ -4,12 +4,14 @@ import discordBot_pic from "@/assets/works/discordbot.png";
 import threeD_navi_pic from "@/assets/works/3dnavi.png";
 import hanabi_pic from "@/assets/works/hanabi.png";
 import styles from "./WorksPopup.module.css";
+import gitHubIcon from "@/assets/contact/github.svg";
 
 type Work = {
   id: number;
   title: string;
   image: string;
   description: string;
+  url: string;
 };
 
 const works: Work[] = [
@@ -18,12 +20,14 @@ const works: Work[] = [
     title: "オセロ",
     image: othello_pic,
     description: "モダンなオセロアプリ。自分が初めて作った作品。",
+    url: "https://github.com/s-renren/othello2",
   },
   {
     id: 2,
     title: "マインスイーパー",
     image: minesweeper_pic,
     description: "モダンなマインスイーパーアプリ。難易度などを設定可能。",
+    url: "https://github.com/s-renren/minesweeper2",
   },
   {
     id: 3,
@@ -31,6 +35,7 @@ const works: Work[] = [
     image: discordBot_pic,
     description:
       "Discordのbot。草の数を取得し、生えていなかったらメッセージを送信してくれるようなアプリ。",
+    url: "https://github.com/s-renren/kusa-checker",
   },
   {
     id: 4,
@@ -38,6 +43,7 @@ const works: Work[] = [
     image: threeD_navi_pic,
     description:
       "2024技育キャンプハッカソン vol.9最優秀賞受賞。旅先へのルートを3Dで見れるアプリ。",
+    url: "https://github.com/s-renren/3D-Navi",
   },
   {
     id: 5,
@@ -45,6 +51,7 @@ const works: Work[] = [
     image: hanabi_pic,
     description:
       "2024技育キャンプハッカソン vol.14最優秀賞受賞。花火をオンラインで友達と楽しむことを目的としたアプリ。",
+    url: "https://github.com/s-renren/Fireworks-Display-Online",
   },
 ];
 
@@ -68,6 +75,9 @@ const WorksPopup = ({ id }: Props) => {
       <div className={styles.txtContainer}>
         <h2 className="text-2xl font-bold mb-2">{work.title}</h2>
         <p className="text-gray-700 mt-8">{work.description}</p>
+        <a href={work.url} target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
+          <img src={gitHubIcon} alt="GitHub" className={styles.githubIcon} />
+        </a>
       </div>
       <div className={styles.imgContainer}>
         <img className={styles.img} src={work.image} alt={work.title} />

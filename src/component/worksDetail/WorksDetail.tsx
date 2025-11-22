@@ -53,7 +53,7 @@ const WorksDetail = () => {
           ))}
         </div>
         <div className={isClicked ? styles.clicked : styles.default}>
-            <WorksPopup id={cardId} />
+          <WorksPopup id={cardId} />
           <div className={styles.backButton} onClick={handleClickBackButton}>
             <div className={styles.backButtonCross1}></div>
             <div className={styles.backButtonCross2}></div>
