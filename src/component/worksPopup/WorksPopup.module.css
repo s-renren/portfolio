@@ -1,12 +1,39 @@
 .container {
   position: relative;
   display: flex;
-  top: 10%;
-  width: auto;
-  height: auto;
+  justify-content: space-between; /* 左:テキスト / 右:画像 */
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+.txtContainer {
+  display: flex;
+  margin: 4px;
+  flex-direction: column;
+  height: 100%;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .img {
-  width: 60%;
-  height: 60%;
+  display: flex;
+  height: auto;
+  object-fit: contain;
+  justify-content: center;
+  margin-top: 6%;
+}
+
+.githubLink {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 16%;
+}
+
+.githubIcon {
+  width: 48px;
 }
