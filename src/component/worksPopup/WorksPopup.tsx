@@ -3,6 +3,7 @@ import minesweeper_pic from "@/assets/worksDetail/minesweeperD.png";
 import discordBot_pic from "@/assets/works/discordbot.png";
 import threeD_navi_pic from "@/assets/works/3dnavi.png";
 import hanabi_pic from "@/assets/works/hanabi.png";
+import qrateImg from "@/assets/worksDetail/qrate.png";
 import styles from "./WorksPopup.module.css";
 import gitHubIcon from "@/assets/contact/github.svg";
 
@@ -53,6 +54,13 @@ const works: Work[] = [
       "2024技育キャンプハッカソン vol.14最優秀賞受賞。花火をオンラインで友達と楽しむことを目的としたアプリ。",
     url: "https://github.com/s-renren/Fireworks-Display-Online",
   },
+  {
+    id: 6,
+    title: "Qrate",
+    image: qrateImg,
+    description: "場所と人数を入れ、アンケート形式の質問に回答するだけでAIによりごはん屋さんとおすすめの理由を教えてくれるアプリ。",
+    url: "https://github.com/Team-Qrate/Qrate",
+  },
 ];
 
 type Props = {
@@ -75,7 +83,12 @@ const WorksPopup = ({ id }: Props) => {
       <div className={styles.txtContainer}>
         <h2 className="text-2xl font-bold mb-2">{work.title}</h2>
         <p className="text-gray-700 mt-8">{work.description}</p>
-        <a href={work.url} target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
+        <a
+          href={work.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.githubLink}
+        >
           <img src={gitHubIcon} alt="GitHub" className={styles.githubIcon} />
         </a>
       </div>

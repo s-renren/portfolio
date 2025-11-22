@@ -7,6 +7,8 @@ import { useState } from "react";
 import styles from "./WorksDetail.module.css";
 import { useNavigate } from "react-router-dom";
 import WorksPopup from "../worksPopup/WorksPopup";
+import qrateImg from "@/assets/worksDetail/qrate.png";
+
 
 const works = [
   { id: 1, title: "オセロ", image: othello_pic },
@@ -14,6 +16,7 @@ const works = [
   { id: 3, title: "草チェッカー", image: discordBot_pic },
   { id: 4, title: "3Dナビ", image: threeD_navi_pic },
   { id: 5, title: "花火大会オンライン", image: hanabi_pic },
+  { id: 6, title: "Qrate", image: qrateImg },
 ];
 
 const WorksDetail = () => {
